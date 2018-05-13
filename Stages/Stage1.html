@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+
+    <h1>Welcome to Stage 1</h1>
+    <p>
+     Your journey begins here. 
+    </p>
+    <br>
+    <p>
+      This was a good place to go after a bit of rolling around in the grass and making out ;).
+    </p>
+   
+  
+    <form>
+      <label for="pswd">Enter your answer: </label>
+      <input type="password" id="pswd">
+      <input type="button" value="Submit" onclick="checkPswd();" />
+    </form>
+    <!--Function to check password the already set password is admin-->
+    <script type="text/javascript">
+      function checkPswd() {
+        var confirmPassword = "bronco";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+          window.location="Stages/Stage2.html";
+        }
+        else{
+          alert("Passwords do not match.");
+        }
+      }
+    </script>
+
+  </body>
+</html>
