@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+
+    <h1>Cars and Bikes 2</h1>
+    <br>
+    <p>
+      Dodge muscle with only 2 doors?
+    </p>
+   
+  
+    <form>
+      <label for="pswd">Enter your answer: </label>
+      <input type="password" id="pswd">
+      <input type="button" value="Submit" onclick="checkPswd();" />
+    </form>
+    <!--Function to check password the already set password is admin-->
+    <script type="text/javascript">
+      function checkPswd() {
+        var confirmPassword = "challenger";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+          window.location="cars3.html";
+        }
+        else{
+          alert("Passwords do not match.");
+        }
+      }
+    </script>
+
+<br>
+    <br>
+
+
+
+  </body>
+</html>

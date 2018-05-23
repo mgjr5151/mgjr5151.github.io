@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+
+    <h1>Welcome to Stage 4</h1>
+    <p>Congratulations on completing Stage 3</p>
+    <br>
+    <p>
+      We may have missed a really nice sunset in this area but just barely. This good moment however can’t be missed.
+    </p>
+    <form>
+      <label for="pswd">Enter your answer: </label>
+      <input type="password" id="pswd">
+      <input type="button" value="Submit" onclick="checkPswd();" />
+    </form>
+    <!--Function to check password the already set password is admin-->
+    <script type="text/javascript">
+      function checkPswd() {
+        var confirmPassword = "sweetness";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+          window.location="Stages_Done.html";
+        }
+        else{
+          alert("Passwords do not match.");
+        }
+      }
+    </script>
+  <br>
+    <br>
+    <form method="get" action="Stage4_Map.html">
+      <button type="submit">Map</button>
+    </form>
+
+
+
+  </body>
+</html>
